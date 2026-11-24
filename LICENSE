@@ -1,0 +1,16 @@
+Datos de los directorios de lugares (archivos lugares_*.dat y paises.json)
+==========================================================================
+
+Contienen información de OpenStreetMap.
+© colaboradores de OpenStreetMap — https://www.openstreetmap.org/copyright
+
+Estos datos están disponibles bajo la Open Database License (ODbL) 1.0:
+https://opendatacommons.org/licenses/odbl/1-0/
+
+Cualquier derecho sobre los contenidos individuales de la base de datos se
+licencian bajo la Database Contents License:
+https://opendatacommons.org/licenses/dbcl/1-0/
+
+Esta licencia aplica solo a los datos publicados en este repositorio.
+No aplica a la aplicación Cabina SV, cuyo código es privado
+(© 2026 Rafael Aguilar, todos los derechos reservados).
