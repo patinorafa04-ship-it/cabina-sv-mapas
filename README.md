@@ -23,6 +23,10 @@ Incluyen ciudades, colonias y barrios, calles, aeropuertos y lugares de interés
 
 Los archivos están en la sección [**Releases**](../../releases/latest). `paises.json` lista los países disponibles.
 
+## Privacidad
+
+[Política de privacidad de Cabina SV](https://patinorafa04-ship-it.github.io/cabina-sv-mapas/privacidad.html)
+
 ## Datos y licencia
 
 Los datos son © colaboradores de [OpenStreetMap](https://www.openstreetmap.org/copyright) y están disponibles bajo la licencia [Open Database License (ODbL) 1.0](https://opendatacommons.org/licenses/odbl/1-0/). Ver [LICENSE](LICENSE).

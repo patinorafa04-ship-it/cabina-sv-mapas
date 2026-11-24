@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Cabina SV</title>
+<style>
+  :root { --fondo: #ffffff; --texto: #14181f; --gris: #586272; --acento: #1f8f82; --tarjeta: #f2f4f7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fondo: #0d1015; --texto: #e8ecf1; --gris: #9aa4b2; --acento: #3dd6c3; --tarjeta: #161a21; }
+  }
+  body { margin: 0; background: var(--fondo); color: var(--texto); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 30px; margin: 0 0 4px; }
+  h2 { font-size: 21px; margin: 32px 0 8px; color: var(--acento); }
+  .fecha { color: var(--gris); margin: 0 0 24px; }
+  .resumen { background: var(--tarjeta); border-radius: 14px; padding: 16px 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--tarjeta); vertical-align: top; }
+  th { color: var(--gris); font-weight: 600; }
+  a { color: var(--acento); }
+  .tabla { overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de privacidad de Cabina SV</h1>
+  <p class="fecha">Vigente desde el 23 de noviembre de 2026</p>
+
+  <div class="resumen">
+    <strong>En resumen:</strong> Cabina SV no tiene cuentas, no muestra publicidad y no envía tus datos a ningún servidor
+    propio. Lo que la app usa (ubicación, contactos, música, notificaciones) se queda en tu teléfono. Solo los servicios
+    de mapas, radio y descarga de directorios reciben lo mínimo para funcionar, como se explica abajo.
+  </div>
+
+  <h2>Quién es responsable</h2>
+  <p>Cabina SV es una app desarrollada por Rafael Aguilar, en El Salvador. Para preguntas sobre privacidad, escribe en
+    <a href="https://github.com/patinorafa04-ship-it/cabina-sv-mapas/issues">github.com/patinorafa04-ship-it/cabina-sv-mapas/issues</a>.</p>
+
+  <h2>Qué permisos usa y para qué</h2>
+  <div class="tabla">
+  <table>
+    <tr><th>Permiso</th><th>Para qué</th><th>¿Sale del teléfono?</th></tr>
+    <tr><td>Ubicación</td><td>Mostrar tu posición y velocidad, el límite de velocidad de la calle y guiarte en las rutas.</td><td>Se envía a Mapbox al usar el mapa, buscar con internet o navegar (ver abajo).</td></tr>
+    <tr><td>Contactos</td><td>Mostrar tus contactos marcados como favoritos para llamarlos con un toque.</td><td>No.</td></tr>
+    <tr><td>Hacer llamadas</td><td>Llamar a un favorito con un toque.</td><td>No (la llamada la hace tu teléfono).</td></tr>
+    <tr><td>Micrófono</td><td>Dictar por voz el destino.</td><td>Sin internet se procesa en el teléfono. Con internet usa el reconocimiento de voz de Google de tu teléfono.</td></tr>
+    <tr><td>Música y audio</td><td>Reproducir la música guardada en tu teléfono.</td><td>No.</td></tr>
+    <tr><td>Acceso a notificaciones</td><td>Mostrar y controlar la música de otras apps y mostrarte tus notificaciones en el inicio.</td><td>No. No se guardan.</td></tr>
+    <tr><td>Bluetooth (dispositivos cercanos)</td><td>Saber a qué dispositivo estás conectado y abrir la app al conectar tu carro.</td><td>No.</td></tr>
+    <tr><td>Mostrar sobre otras apps</td><td>Abrir la app sola al conectar el Bluetooth del carro (opcional).</td><td>No.</td></tr>
+    <tr><td>Notificaciones</td><td>Avisarte que tu carro se conectó y mostrar los controles de la música.</td><td>No.</td></tr>
+    <tr><td>Internet</td><td>Mapa, búsqueda, radio y descarga de directorios de otros países.</td><td>Ver servicios de terceros.</td></tr>
+  </table>
+  </div>
+
+  <h2>Datos que se guardan solo en tu teléfono</h2>
+  <p>Tu nombre y el de tu carro, tus ajustes, lugares guardados (Casa, Trabajo, favoritos), búsquedas recientes, playlists,
+    emisoras favoritas, la última canción que escuchaste y tu token de Mapbox. Si la app se cierra por un error, el
+    detalle del error se guarda en el teléfono para que tú decidas si compartirlo; nunca se envía solo.</p>
+  <p>Tu token de Mapbox no se copia a las copias de seguridad de Google. Al desinstalar la app, todo se borra.</p>
+
+  <h2>Servicios de terceros</h2>
+  <ul>
+    <li><strong>Mapbox</strong> (mapas, búsqueda con internet y navegación). Recibe tu ubicación y las búsquedas que haces
+      cuando usas esas funciones, junto con tu propio token. Su política:
+      <a href="https://www.mapbox.com/legal/privacy">mapbox.com/legal/privacy</a>.</li>
+    <li><strong>radio-browser.info</strong> (lista de emisoras). Recibe el país o texto que buscas. Las emisoras transmiten
+      directamente desde sus propios servidores.</li>
+    <li><strong>GitHub</strong> (descarga de directorios de otros países). Solo si eliges descargar uno. Su política:
+      <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</li>
+    <li><strong>Organic Maps</strong> y otras apps: solo se abren si tú lo pides; Cabina SV no les envía datos.</li>
+  </ul>
+
+  <h2>Lo que Cabina SV no hace</h2>
+  <ul>
+    <li>No vende ni comparte tus datos con anunciantes.</li>
+    <li>No tiene publicidad ni herramientas de análisis o rastreo.</li>
+    <li>No lee tu historial de llamadas ni tus mensajes.</li>
+    <li>No usa tu ubicación en segundo plano, salvo mientras navegas con una ruta activa (para seguir guiándote).</li>
+  </ul>
+
+  <h2>Tus opciones</h2>
+  <p>Puedes negar o quitar cualquier permiso en Ajustes de Android &gt; Apps &gt; Cabina SV &gt; Permisos. La app sigue
+    funcionando sin las funciones que dependen de ese permiso. Puedes borrar tus lugares guardados desde la propia app.</p>
+
+  <h2>Niños</h2>
+  <p>Cabina SV está pensada para conductores adultos y no está dirigida a menores de 13 años.</p>
+
+  <h2>Cambios</h2>
+  <p>Si esta política cambia, se publicará aquí con su nueva fecha.</p>
+
+  <p style="margin-top:40px;color:var(--gris)">© 2026 Rafael Aguilar · Hecho en El Salvador</p>
+</main>
+</body>
+</html>
