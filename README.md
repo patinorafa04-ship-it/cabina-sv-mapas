@@ -21,6 +21,8 @@ Incluyen ciudades, colonias y barrios, calles, aeropuertos y lugares de interés
 
 🇸🇻 **El Salvador ya viene incorporado en la app**: Cabina SV nació aquí, es la app de nuestro país, así que su directorio está listo desde que la instalas, sin descargar nada. Los demás países se descargan desde este repositorio cuando los necesites.
 
+🔜 **Próximamente: rutas sin internet.** Aquí también se publicarán los archivos de rutas por país, para que la app calcule el camino y guíe por voz sin datos móviles. Se descargarán una sola vez desde la app, igual que los directorios de lugares.
+
 Los archivos están en la sección [**Releases**](../../releases/latest). `paises.json` lista los países disponibles.
 
 ## Privacidad
