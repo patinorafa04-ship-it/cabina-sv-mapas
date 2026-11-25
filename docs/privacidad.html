@@ -20,17 +20,19 @@
   th { color: var(--gris); font-weight: 600; }
   a { color: var(--acento); }
   .tabla { overflow-x: auto; }
+  a, td { overflow-wrap: anywhere; }
 </style>
 </head>
 <body>
 <main>
   <h1>Política de privacidad de Cabina SV</h1>
-  <p class="fecha">Vigente desde el 23 de noviembre de 2026</p>
+  <p class="fecha">Vigente desde el 24 de noviembre de 2026</p>
 
   <div class="resumen">
     <strong>En resumen:</strong> Cabina SV no tiene cuentas, no muestra publicidad y no envía tus datos a ningún servidor
-    propio. Lo que la app usa (ubicación, contactos, música, notificaciones) se queda en tu teléfono. Solo los servicios
-    de mapas, radio y descarga de directorios reciben lo mínimo para funcionar, como se explica abajo.
+    propio. Tus contactos, tu música y tus notificaciones se quedan en tu teléfono. <strong>Tu ubicación y tus búsquedas
+    con internet sí llegan a Mapbox</strong>, el servicio de mapas; la radio y las descargas usan otros servicios. Abajo se
+    explica qué recibe cada uno y cómo limitarlo.
   </div>
 
   <h2>Quién es responsable</h2>
@@ -41,7 +43,7 @@
   <div class="tabla">
   <table>
     <tr><th>Permiso</th><th>Para qué</th><th>¿Sale del teléfono?</th></tr>
-    <tr><td>Ubicación</td><td>Mostrar tu posición y velocidad, el límite de velocidad de la calle y guiarte en las rutas.</td><td>Se envía a Mapbox al usar el mapa, buscar con internet o navegar (ver abajo).</td></tr>
+    <tr><td>Ubicación</td><td>Mostrar tu posición y velocidad, el límite de velocidad de la calle y guiarte en las rutas.</td><td>Sí, a Mapbox: al usar su mapa, buscar con internet o navegar, y como datos de uso (ver abajo). La ruta sin internet se calcula en tu teléfono.</td></tr>
     <tr><td>Contactos</td><td>Mostrar tus contactos marcados como favoritos para llamarlos con un toque.</td><td>No.</td></tr>
     <tr><td>Hacer llamadas</td><td>Llamar a un favorito con un toque.</td><td>No (la llamada la hace tu teléfono).</td></tr>
     <tr><td>Micrófono</td><td>Dictar por voz el destino.</td><td>Sin internet se procesa en el teléfono. Con internet usa el reconocimiento de voz de Google de tu teléfono.</td></tr>
@@ -50,42 +52,49 @@
     <tr><td>Bluetooth (dispositivos cercanos)</td><td>Saber a qué dispositivo estás conectado y abrir la app al conectar tu carro.</td><td>No.</td></tr>
     <tr><td>Mostrar sobre otras apps</td><td>Abrir la app sola al conectar el Bluetooth del carro (opcional).</td><td>No.</td></tr>
     <tr><td>Notificaciones</td><td>Avisarte que tu carro se conectó y mostrar los controles de la música.</td><td>No.</td></tr>
-    <tr><td>Internet</td><td>Mapa, búsqueda, radio y descarga de directorios de otros países.</td><td>Ver servicios de terceros.</td></tr>
+    <tr><td>Internet</td><td>Mapa, búsqueda, radio y descarga de directorios y rutas.</td><td>Ver servicios de terceros.</td></tr>
   </table>
   </div>
 
   <h2>Datos que se guardan solo en tu teléfono</h2>
   <p>Tu nombre y el de tu carro, tus ajustes, lugares guardados (Casa, Trabajo, favoritos), búsquedas recientes, playlists,
-    emisoras favoritas, la última canción que escuchaste y tu token de Mapbox. Si la app se cierra por un error, el
+    emisoras favoritas, la última canción que escuchaste, tu última posición conocida (para abrir el mapa ahí) y tu token de Mapbox. Si la app se cierra por un error, el
     detalle del error se guarda en el teléfono para que tú decidas si compartirlo; nunca se envía solo.</p>
-  <p>Tu token de Mapbox no se copia a las copias de seguridad de Google. Al desinstalar la app, todo se borra.</p>
+  <p>Tu token de Mapbox y tu última posición no se incluyen en las copias de seguridad de Google. Al desinstalar la app, todo se borra.</p>
 
   <h2>Servicios de terceros</h2>
   <ul>
     <li><strong>Mapbox</strong> (mapas, búsqueda con internet y navegación). Recibe tu ubicación y las búsquedas que haces
-      cuando usas esas funciones, junto con tu propio token. Su política:
-      <a href="https://www.mapbox.com/legal/privacy">mapbox.com/legal/privacy</a>.</li>
+      cuando usas esas funciones, junto con tu propio token, tu dirección de internet (IP) y datos técnicos del teléfono.
+      Además, <strong>por defecto recoge datos de ubicación y de uso sin tu nombre (telemetría)</strong> para mejorar sus mapas y
+      el tráfico. <strong>Puedes apagar esa telemetría</strong>: en un mapa de Mapbox (con internet), toca el botón
+      <strong>ⓘ</strong> junto a su logo y elige la opción de telemetría.
+      Su política: <a href="https://www.mapbox.com/legal/privacy">mapbox.com/legal/privacy</a> y
+      <a href="https://www.mapbox.com/telemetry">mapbox.com/telemetry</a>.</li>
     <li><strong>radio-browser.info</strong> (lista de emisoras). Recibe el país o texto que buscas. Las emisoras transmiten
       directamente desde sus propios servidores.</li>
-    <li><strong>GitHub</strong> (descarga de directorios de otros países). Solo si eliges descargar uno. Su política:
+    <li><strong>GitHub</strong> (lista y descarga de directorios y rutas). Al revisar qué hay disponible o al descargar, recibe tu dirección de internet (IP). Su política:
       <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</li>
-    <li><strong>Organic Maps</strong> y otras apps: solo se abren si tú lo pides; Cabina SV no les envía datos.</li>
+    <li><strong>Organic Maps</strong> y otras apps: solo se abren si tú lo pides; Cabina SV no les envía datos, salvo
+      el destino cuando eliges abrirlo en Organic Maps.</li>
+    <li><strong>PayPal</strong> (aporte voluntario). El botón abre una página web; el pago ocurre en PayPal, con su política.
+      Cabina SV no recibe datos de tu tarjeta. Quien recibe el aporte puede ver los datos que PayPal muestra, como tu nombre y correo.</li>
   </ul>
 
   <h2>Lo que Cabina SV no hace</h2>
   <ul>
     <li>No vende ni comparte tus datos con anunciantes.</li>
-    <li>No tiene publicidad ni herramientas de análisis o rastreo.</li>
+    <li>No tiene publicidad ni usa el identificador de publicidad. Quien desarrolla la app no recibe estadísticas tuyas; la telemetría de Mapbox se explica arriba.</li>
     <li>No lee tu historial de llamadas ni tus mensajes.</li>
-    <li>No usa tu ubicación en segundo plano, salvo mientras navegas con una ruta activa (para seguir guiándote).</li>
+    <li>No pide ubicación en segundo plano permanente: con la app fuera de pantalla solo la usa mientras hay una ruta activa, para seguir guiándote.</li>
   </ul>
 
   <h2>Tus opciones</h2>
   <p>Puedes negar o quitar cualquier permiso en Ajustes de Android &gt; Apps &gt; Cabina SV &gt; Permisos. La app sigue
-    funcionando sin las funciones que dependen de ese permiso. Puedes borrar tus lugares guardados desde la propia app.</p>
+    funcionando sin las funciones que dependen de ese permiso. Puedes borrar tus lugares guardados desde la propia app, y al desinstalarla se borra lo que guardó en el teléfono. Lo que recibe Mapbox se rige por su política.</p>
 
   <h2>Niños</h2>
-  <p>Cabina SV está pensada para conductores adultos y no está dirigida a menores de 13 años.</p>
+  <p>Cabina SV está pensada para conductores adultos y no está dirigida a menores de 18 años.</p>
 
   <h2>Cambios</h2>
   <p>Si esta política cambia, se publicará aquí con su nueva fecha.</p>
