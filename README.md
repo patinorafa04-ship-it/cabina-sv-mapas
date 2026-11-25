@@ -23,13 +23,13 @@ Incluyen ciudades, colonias y barrios, calles, aeropuertos y lugares de interés
 
 ## Rutas sin internet
 
-Archivos para que la app calcule el camino sin datos móviles. Se descargan una sola vez desde la app (Ajustes > Navegación), igual que los directorios de lugares.
+Archivos para que la app muestre su mapa y calcule el camino sin datos móviles. Se descargan una sola vez desde la app (Ajustes > Navegación), igual que los directorios de lugares.
 
 | País | Descarga | Ya instalado |
 |---|---|---|
 | 🇸🇻 El Salvador | 12.6 MB | 27 MB |
 
-🔜 La app empezará a usarlos para navegar en su próxima actualización.
+✅ Disponible: con este archivo, Cabina SV te guía por voz sin internet en El Salvador.
 
 Los archivos están en la sección [**Releases**](../../releases/latest). `paises.json` lista los países disponibles.
 
