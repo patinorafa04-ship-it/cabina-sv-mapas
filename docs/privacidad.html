@@ -44,8 +44,8 @@
   <table>
     <tr><th>Permiso</th><th>Para qué</th><th>¿Sale del teléfono?</th></tr>
     <tr><td>Ubicación</td><td>Mostrar tu posición y velocidad, el límite de velocidad de la calle y guiarte en las rutas.</td><td>Sí, a Mapbox: al usar su mapa, buscar con internet o navegar, y como datos de uso (ver abajo). La ruta sin internet se calcula en tu teléfono.</td></tr>
-    <tr><td>Contactos</td><td>Mostrar tus contactos marcados como favoritos para llamarlos con un toque.</td><td>No.</td></tr>
-    <tr><td>Hacer llamadas</td><td>Llamar a un favorito con un toque.</td><td>No (la llamada la hace tu teléfono).</td></tr>
+    <tr><td>Contactos (sin permiso)</td><td>La app no lee tu agenda. Al agregar un favorito, tú eliges a la persona en el selector de Android y Cabina SV solo recibe su nombre y su número.</td><td>No. Se guardan en tu teléfono y no se incluyen en las copias de seguridad de Google.</td></tr>
+    <tr><td>Hacer llamadas</td><td>Llamar a un favorito con un toque (opcional; sin él se abre el marcador).</td><td>No (la llamada la hace tu teléfono).</td></tr>
     <tr><td>Micrófono</td><td>Dictar por voz el destino.</td><td>Sin internet se procesa en el teléfono. Con internet usa el reconocimiento de voz de Google de tu teléfono.</td></tr>
     <tr><td>Música y audio</td><td>Reproducir la música guardada en tu teléfono.</td><td>No.</td></tr>
     <tr><td>Acceso a notificaciones</td><td>Mostrar y controlar la música de otras apps y mostrarte tus notificaciones en el inicio.</td><td>No. No se guardan.</td></tr>
@@ -57,7 +57,7 @@
   </div>
 
   <h2>Datos que se guardan solo en tu teléfono</h2>
-  <p>Tu nombre y el de tu carro, tus ajustes, lugares guardados (Casa, Trabajo, favoritos), búsquedas recientes, playlists,
+  <p>Tu nombre y el de tu carro, tus ajustes, lugares guardados (Casa, Trabajo, favoritos), el nombre y número de tus favoritos para llamar, búsquedas recientes, playlists,
     emisoras favoritas, la última canción que escuchaste, tu última posición conocida (para abrir el mapa ahí) y tu token de Mapbox. Si la app se cierra por un error, el
     detalle del error se guarda en el teléfono para que tú decidas si compartirlo; nunca se envía solo.</p>
   <p>Tu token de Mapbox y tu última posición no se incluyen en las copias de seguridad de Google. Al desinstalar la app, todo se borra.</p>
